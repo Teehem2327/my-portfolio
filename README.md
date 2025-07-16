@@ -48,10 +48,10 @@ Every folder includes:
 
 - 💼 *Open to remote DevOps / Cloud Engineering opportunities*
 - 🌍 Skilled across AWS, GCP, CI/CD, Kubernetes, Terraform, Ansible, GitHub Actions, Jenkins
-- 💪 Love solving real problems — building secure, scalable, automated infrastructure
+- 💪 Love solving real problems, building secure, scalable, automated infrastructure
 - 📧 [Email me](mailto:teehemsigital@gmail.com) | [LinkedIn](https://www.linkedin.com/in/temitope-moses-fasooto-66949719a) | [GitHub](https://github.com/Teehem2327)
 
 ---
 
-**If my work resonates with you — feel free to star ⭐ this repo, fork it, or reach out!**  
+**If my work resonates with you, feel free to star ⭐ this repo, fork it, or reach out!**  
 *Learning never stops.* 🚀✨
