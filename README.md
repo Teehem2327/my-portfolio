@@ -11,14 +11,14 @@ Every project here was built step-by-step, with challenges, fixes, and lessons l
 
 | # | Project | Cloud | Highlights |
 |---|---------|-------|------------|
-| 1 | [Virtual Machines Basics](./01-virtual-machines-aws-ec2) | AWS | Created & connected to my first EC2 |
-| 2 | [Shell Scripting + Linux Utilities](./02-shell-scripting-awscli-linux) | AWS | Automated AWS tasks with shell scripts |
-| 3 | [Git & GitHub Version Control](./03-git-github-version-control) | GitHub | Practiced branches, commits, merges |
-| 4 | [Node.js App Deployment on EC2](./04-nodejs-ec2-deployment) | AWS | IAM roles, inbound rules, troubleshooting |
-| 5 | [Ansible Automation](./05-ansible-ssh-ec2) | AWS | Inventory, ad-hoc commands, roles |
-| 6 | [Terraform Infrastructure as Code](./06-terraform-iac-basics) | AWS | Wrote, planned, applied infra |
-| 7 | [CI/CD with GitHub Actions](./07-github-actions-runner-ec2) | GitHub, AWS | Self-hosted runner, pipelines |
-| 8 | [Django + Docker Deployment](./08-django-docker-ec2) | AWS | Built & ran containerized Django app |
+| 1 | [Virtual Machines Basics](./01-aws-ec2-vm-setup) | AWS | Created & connected to my first EC2 |
+| 2 | [Shell Scripting + Linux Utilities](./02-shell-scripting-aws-cli-linux-tools) | AWS | Automated AWS tasks with shell scripts |
+| 3 | [Git & GitHub Version Control](./03-shell-scripting-basics-first-script) | GitHub | Practiced branches, commits, merges |
+| 4 | [Node.js App Deployment on EC2](./04-git-github-version-control) | AWS | IAM roles, inbound rules, troubleshooting |
+| 5 | [Ansible Automation](./05-nodejs-app-deployment-aws-ec2) | AWS | Inventory, ad-hoc commands, roles |
+| 6 | [Terraform Infrastructure as Code](./06-ansible-automation-ssh-multi-instance) | AWS | Wrote, planned, applied infra |
+| 7 | [CI/CD with GitHub Actions](.07-infrastructure-as-code-terraform-basics) | GitHub, AWS | Self-hosted runner, pipelines |
+| 8 | [Django + Docker Deployment](./08-github-actions-cicd-with-self-hosted-runner) | AWS | Built & ran containerized Django app |
 | 9 | [Static Web App with Apache](./09-static-web-apache-nodejs) | AWS | Apache, Node.js on EC2 |
 | 10 | [AWS IAM + EC2 Deep Dive](./10-aws-iam-ec2) | AWS | Users, least privilege, EC2 management |
 | 11 | [Full CI/CD Pipeline (GitHub, CodeBuild, CodePipeline, CodeDeploy)](./11-aws-cicd-pipeline) | AWS | End-to-end deployment to EC2 |
