@@ -11,9 +11,8 @@ Every project here was built step-by-step, with challenges, fixes, and lessons l
 
 | # | Project | Cloud | Highlights |
 |---|---------|-------|------------|
-| 1 | [Virtual Machines Basics](./01-virtual-machines-aws-ec2) | AWS | Created & connected to my first EC2 |
-| 2 | [Shell Scripting + Linux Utilities](./02-shell-scripting-awscli-linux) | AWS | Automated AWS tasks with shell scripts |
-| 3 | [Git & GitHub Version Control](./03-git-github-version-control) | GitHub | Practiced branches, commits, merges |
+| 000 | [Secret Santa CI/CD Pipeline (Jenkins)](./000-jenkins-cicd-secret-santa) | AWS | Maven → SonarQube → DockerHub |
+| 001 | [Boardgame CI/CD to Kubernetes](./001-cicd-boardgame-kubernetes) | AWS | Jenkins → Docker → Kubernetes |
 | 4 | [Node.js App Deployment on EC2](./04-nodejs-ec2-deployment) | AWS | IAM roles, inbound rules, troubleshooting |
 | 5 | [Ansible Automation](./05-ansible-ssh-ec2) | AWS | Inventory, ad-hoc commands, roles |
 | 6 | [Terraform Infrastructure as Code](./06-terraform-iac-basics) | AWS | Wrote, planned, applied infra |
@@ -32,9 +31,6 @@ Every project here was built step-by-step, with challenges, fixes, and lessons l
 | 19 | [Google Cloud Hands-On](./19-gcp-fundamentals-vpc-app-engine) | GCP | VPCs, Firewalls, App Engine, Cloud Run |
 | 20 | [Python App on GKE](./20-gcp-gke-python-app) | GCP | Artifact Registry, GKE quotas fix |
 | 21 | [AWS RDS + WordPress + EC2 + ELB](./21-aws-rds-wordpress-ec2-elb) | AWS | DB connectivity, VPC networking |
-| 000 | [Secret Santa CI/CD Pipeline (Jenkins)](./000-jenkins-cicd-secret-santa) | AWS | Maven → SonarQube → DockerHub |
-| 001 | [Boardgame CI/CD to Kubernetes](./001-cicd-boardgame-kubernetes) | AWS | Jenkins → Docker → Kubernetes |
-
 ---
 
 ## 📸 Proof & Screenshots
