@@ -1,95 +1,116 @@
-# Secret Santa Matching App – Jenkins CI/CD Pipeline
+# Project: boardgame-cicd-kubernetes
 
-This project demonstrates a complete **CI/CD pipeline** setup using **Jenkins hosted on AWS EC2** to automate the build, test, scan, and deployment processes of a Java-based **Secret Santa Matching** application.
+## 🎯 **Objective**
 
----
-
-## Stack Used
-
-- **Jenkins** (self-hosted on EC2)
-- **Maven** – Build & dependency management
-- **SonarQube** – Static code analysis
-- **OWASP Dependency Check** – Security vulnerability scanning
-- **Docker** & **DockerHub** – Containerization and image registry
+Build and deploy a full **CI/CD pipeline** for a Boardgame application that goes from **code → build → test → scan → push → Kubernetes deployment**, with full monitoring and alerting. This project sharpened my ability to troubleshoot Kubernetes environments and define a robust Jenkins pipeline from scratch using real-world tools.
 
 ---
 
-## Pipeline Stages (via `Jenkinsfile`)
+## 🚀 **Pipeline Overview**
 
-1. **Build** – Compiles the Java code using Maven
-2. **Test** – Runs unit tests
-3. **Code Analysis** – Integrates SonarQube for quality gates
-4. **Security Scan** – Uses OWASP to detect vulnerable dependencies
-5. **Dockerize** – Builds a Docker image of the app
-6. **Publish** – Pushes the image to DockerHub
-7. **Deploy** – Runs the container or prepares it for the next environment
-
----
-
-## Jenkins Plugins Used
-
-- **JDK Tool**
-- **Maven Integration**
-- **SonarScanner for Jenkins**
-- **OWASP Dependency-Check Plugin**
-- **Docker Pipeline**
-- **Docker Build Step**
-- **CloudBees Docker Build and Publish**
+**Stages Implemented:**
+- ✅ Declarative Tool Install
+- ✅ Git Checkout
+- ✅ Compile with Maven
+- ✅ Unit Testing
+- ✅ File System Scan
+- ✅ SonarQube Code Analysis
+- ✅ Quality Gate Check with Trivy
+- ✅ Docker Image Build & Tagging
+- ✅ Docker Image Scan
+- ✅ Push Docker Image to DockerHub
+- ✅ Publish artifacts to Nexus
+- ✅ Deploy to Kubernetes (kubeadm cluster)
+- ✅ Post-Deployment Validation
+- ✅ Alerting with Prometheus, Grafana, Gmail
 
 ---
 
-## Key Challenges & Fixes
+## ⚙️ **What I Did**
 
-- **EBS Resizing**: Increased Jenkins host EBS volume from 8GB → 25GB to prevent build failure due to disk space.
-- **Plugin Compatibility**: Resolved plugin issues by reviewing Jenkins logs and matching plugin versions with Jenkins core.
-- **Credential Management**: Injected **SonarQube tokens** and **DockerHub credentials** using Jenkins Credentials Manager for secure access.
-
----
-
-## Screenshots
-
-Place these inside the `screenshots/` folder:
-
-- Jenkins pipeline view
-- SonarQube dashboard with code quality report
-- DockerHub repository with uploaded image
-- OWASP report (optional)
+✅ Set up a **multi-stage Jenkins pipeline** using a custom `Jenkinsfile` I wrote completely from scratch  
+✅ Created a **3-node Kubernetes cluster** (1 master, 2 workers) using `kubeadm` on AWS EC2  
+✅ Built a **Docker image**, scanned it with **Trivy**, and pushed it to **DockerHub**  
+✅ Integrated **SonarQube** and **Nexus** for static analysis and artifact storage  
+✅ Used **Prometheus + Grafana + Blackbox + Node Exporter** for full observability  
+✅ Configured **RBAC** in Kubernetes for secured service access  
+✅ Set up **email alerting** via Gmail (after several misfires with the wrong account 😅)
 
 ---
 
-## Takeaway
+## 🛠️ **Tools & Technologies**
 
-> **CI/CD isn't just about automation — it's about trust, repeatability, and visibility.**  
-This project showcases my ability to design, troubleshoot, and maintain secure pipelines in a cloud environment.
-
----
-
-## Tools & Skills
-
-- Jenkins on EC2
-- Maven + Java CI/CD pipeline
-- Static & security scanning tools
-- Docker + DockerHub integration
-- Troubleshooting builds, plugins, and storage
-
----
-
-## What’s Next?
-
-| Task | Status |
-|------|--------|
-| Automate deployment to Kubernetes | 🔜 |
-| Replace EC2 with containerized Jenkins (ECS/EKS) | 🔜 |
-| Enable Slack/email alerts for build failures | 🔜 |
+| Category             | Tools/Services                            |
+|----------------------|-------------------------------------------|
+| CI/CD                | Jenkins, Jenkinsfile (Declarative)        |
+| Build & Test         | Maven                                     |
+| Code Quality         | SonarQube, Trivy                          |
+| Artifact Repository  | Nexus                                     |
+| Containerization     | Docker, DockerHub                         |
+| Kubernetes Infra     | kubeadm, EC2 (7 Instances total)          |
+| Monitoring           | Prometheus, Grafana                       |
+| Exporters            | Node Exporter, Blackbox Exporter          |
+| Notification         | Gmail Alertmanager                        |
+| Security             | RBAC, Trivy                               |
 
 ---
 
-## 🤝 Let’s Connect
+## 💡 **Challenges & Lessons**
 
-I’m open to **DevOps**, **Cloud**, or **Technical Support Engineer** roles where I can automate secure deployments, maintain build pipelines, and drive cloud-native solutions.
+> **🧱 Challenge:** Spent nearly 7 hours setting up the cluster due to networking, kubelet, and service issues.  
+> **✅ Solution:** Took a break, returned with fresh eyes and AI-assisted commands. Learned the importance of breaks and documentation.  
+
+> **✍️ Lesson:** Writing the Jenkinsfile myself made me more confident and helped me fully understand each pipeline phase. Now, I rarely copy-paste unknown code again.
 
 ---
 
-**Keywords**: Jenkins, Maven, Docker, CI/CD, SonarQube, Dependency Check, DevOps, EC2, DockerHub, Pipeline Automation
+## 🧰 **Kubernetes Setup Breakdown**
 
+| Node Type     | Purpose                                   |
+|---------------|-------------------------------------------|
+| Master Node   | Kubernetes control plane                  |
+| Worker Nodes  | App Deployment                            |
+| Jenkins Node  | CI server                                 |
+| SonarQube     | Static analysis                           |
+| Nexus         | Artifact repository                       |
+| Monitoring    | Prometheus, Grafana, Node/Blackbox Exporter|
 
+---
+
+## 📷 **Screenshots to Upload (Optional)**
+
+Place these inside `/screenshots/`:
+- Jenkins pipeline dashboard (Success state)
+- Kubernetes `kubectl get pods` result
+- Grafana dashboard with metrics
+- Prometheus targets with exporters active
+- SonarQube analysis result
+- Email alert example from Gmail
+
+---
+
+## 🗝️ **Takeaway**
+
+> This project reflects my ability to **design and implement end-to-end CI/CD pipelines** with real production-like tools, across **build, test, scan, delivery, deployment, and monitoring stages**, all managed in a secure and observable Kubernetes environment.
+
+---
+
+## 🧭 **Next Steps**
+
+| Task                        | Status |
+|-----------------------------|--------|
+| ✅ Add Ingress & TLS        | Done   |
+| ✅ Automate with Helm       | Done   |
+| ✅ Implement backup jobs    | Done   |
+| 🔄 Add GitOps with ArgoCD   | In Progress |
+
+---
+
+## 🤝 **Let’s Connect**
+
+> I'm available for **DevOps**, **Cloud Engineering**, and **Technical Support** opportunities. This project demonstrates my ability to deliver reliable, scalable infrastructure pipelines, automate deployments, and troubleshoot live production issues.
+
+---
+
+**Keywords:** Jenkins, Maven, SonarQube, Docker, Kubernetes, Prometheus, Grafana, CI/CD, Trivy, Nexus, RBAC, Monitoring, Alertmanager, Technical Support
+ 
