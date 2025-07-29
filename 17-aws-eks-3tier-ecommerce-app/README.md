@@ -2,7 +2,7 @@
 
 ## 📌 Objective
 
-This project demonstrates the **end-to-end deployment** of a **production-grade 3-tier e-commerce application** using **Amazon EKS**, **AWS CLI**, **kubectl**, and **eksctl** — fully provisioned and managed via command-line tools following Infrastructure-as-Code best practices.
+This project demonstrates the **end-to-end deployment** of a **production-grade 3-tier e-commerce application** using **Amazon EKS**, **AWS CLI**, **kubectl**, and **eksctl**, fully provisioned and managed via command-line tools following Infrastructure-as-Code best practices.
 
 ---
 
