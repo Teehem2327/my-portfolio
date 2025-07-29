@@ -1,4 +1,4 @@
-# 🎅 Secret Santa Matching App - Jenkins CI/CD Pipeline 
+#  Secret Santa Matching App - Jenkins CI/CD Pipeline 
 
 This project showcases a complete CI/CD pipeline built from scratch for a Java-based Secret Santa Matching App using Jenkins, Docker, SonarQube, and OWASP Dependency Check. The pipeline is hosted on an EC2 instance and follows DevSecOps best practices with secure, automated delivery.
 
