@@ -1,9 +1,9 @@
 #  Temitope’s DevOps Hands-On Portfolio
 
-Hi 👋, I’m **Temitope Moses Fasooto** — a passionate **DevOps & Cloud Engineer** who believes in learning by *doing*.  
+Hi 👋, I’m **Temitope Moses Fasooto**, a passionate **DevOps & Cloud Engineer** who believes in learning by *doing*.  
 This repo is my **living portfolio**, showcasing real-world hands-on projects across **AWS**, **GCP**, **Kubernetes**, **Terraform**, **CI/CD**, **Docker**, **Ansible**, and more.
 
-Every project here was built step-by-step, with challenges, fixes, and lessons learned — no copy-paste theory. Feel free to explore any folder to see screenshots, configs, and proof of work.
+Every project here was built step-by-step, with challenges, fixes, and lessons learned, no copy-paste theory. Feel free to explore any folder to see screenshots, configs, and proof of work.
 
 ---
 
